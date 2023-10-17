@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 
 export const ThreadList = () => {
     const [threads, setThread] = useState([]);
@@ -13,14 +13,11 @@ export const ThreadList = () => {
     
     return(
       <>
-      <h1>新着スレッド</h1>
-      
         <ul class="threads">
           {threads.map(thread => (
             <li key={thread.id}>{thread.title}</li>
           ))}
         </ul>
-      
       </>
     )
   }

@@ -2,8 +2,18 @@
   text-align: center;
 }
 
-.threads {
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.headname {
+  color: white;
+}
+.Header {
+  background-color: lime;
+  height: 50px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
