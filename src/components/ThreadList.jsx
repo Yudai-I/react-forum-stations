@@ -9,15 +9,21 @@ export const ThreadList = () => {
         fetch(url)
           .then(res => res.json())
           .then(data => setThread(data))
+          .catch(error => {
+            console.error('エラーが発生しました');
+          });
       }, []);
     
     return(
       <>
-        <ul class="threads">
+      <h2 className="label">新着スレッド</h2>
+      <div className="Threads">
+        <ul>
           {threads.map(thread => (
-            <li key={thread.id}>{thread.title}</li>
+            <li key={thread.id} className="ThreadTitle">{thread.title}</li>
           ))}
         </ul>
+        </div>
       </>
     )
   }

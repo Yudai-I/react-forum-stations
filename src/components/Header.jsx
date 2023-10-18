@@ -5,8 +5,9 @@ export const Header = () => {
 
     return(
         <>
-        <div class="Header">
-        <p class='headname'>掲示板<Link to="/thread/new">スレッド作成</Link></p>
+        <div className="Header">
+        <span className='ThreadsPage'>掲示板</span>
+        <span className="newthread"><Link to="/thread/new">スレッド作成</Link></span>
         </div>
         </>
       )
