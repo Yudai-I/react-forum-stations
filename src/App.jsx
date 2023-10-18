@@ -1,7 +1,7 @@
 import './App.css';
 import * as React from 'react';
-import { ThreadList } from './routes/ThreadList';
-import { Header } from './Header';
+import { ThreadList } from './components/ThreadList';
+import { Header } from './components/Header';
 function App() {
   return (
     <>

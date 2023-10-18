@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-/* ルーティングに必要な初期設定 */
+//ルーティングに必要な初期設定
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-/* /thread/newへのルーティングを追加 */
+//thread/newへのルーティングを追加
 import NewThread from './routes/NewThread';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
