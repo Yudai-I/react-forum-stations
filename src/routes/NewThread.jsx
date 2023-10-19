@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { Header } from '../components/Header';
+
 export const NewThread = () => {
   const [title, setTitle] = useState('');
   const handleInput = (e) => {
@@ -21,6 +21,7 @@ export const NewThread = () => {
           alert('スレッド作成に成功しました');
           return res.json();
         }
+        
       })
       .then((data) => {
         console.log(data);
